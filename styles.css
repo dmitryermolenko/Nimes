@@ -76,6 +76,10 @@ a {
   display: flex;
 }
 
+.main {
+  padding-bottom: 130px;
+}
+
 .promo {
   background-color: #f1f2f4;
 }
@@ -119,6 +123,8 @@ a {
   color: #ffffff;
   text-decoration: none;
   background-color: #151c22;
+  border: none;
+  cursor: pointer;
 }
 
 .button-next {
@@ -186,10 +192,6 @@ a {
   font-weight: 700;
 }
 
-.categories {
-  padding-bottom: 130px;
-}
-
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
@@ -206,6 +208,7 @@ a {
 .catalog-item-link {
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .catalog-item-link img {
@@ -405,7 +408,7 @@ a {
 .catalog {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 130px;
+  padding: 40px 0 0;
 }
 
 .catalog-filters {
@@ -463,4 +466,120 @@ a {
   margin-top: 40px;
   border: none;
 }
+
+.card {
+  margin-top: 55px;
+  font-weight: 400;
+  background-image: linear-gradient(to right, #ffffff 51%, #f1f2f4 51%);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-photos-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 520px;
+}
+
+.photos-slider-preview {
+  display: flex;
+  margin: 20px -20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photos-slider-preview-item {
+  margin-right: 20px;
+}
+
+.photos-slider-preview-item img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.slider-button {
+  position: absolute;
+  top: 30%;
+  width: 13px;
+  height: 23px;
+  background-image: url('img/arrow-left.svg');
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider-prev-button {
+  left: 0;
+}
+
+.slider-next-button {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.card-description-column {
+  box-sizing: border-box;
+  width: 590px;
+  padding: 70px 150px 70px 70px;
+}
+
+.card-description-title {
+  margin: 0;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.card-description-text {
+  margin: 40px 0 10px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.card-description-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 40px 0;
+}
+
+.field-group {
+  margin: 30px 0 0;
+  padding: 0;
+  border: none;
+}
+
+.legend {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+input[type="radio"] {
+  margin: 0;
+}
+
+input[name='size'] {
+  display: none;
+}
+
+.size-label {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #727A82;
+}
+
+input:checked + .size-label {
+  color: #151C22;
+}
+
+.similar {
+  padding-top: 130px;
+}
+
+
 
